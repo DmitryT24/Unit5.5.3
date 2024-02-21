@@ -25,7 +25,7 @@ namespace Unit5._5._3
         {
             var modif = saidworld;
             Console.WriteLine("..." + modif);
-
+            Console.BackgroundColor = (ConsoleColor)deep;
             if (modif.Length > 2)
             {
                 modif = modif.Remove(0, 2);
@@ -34,6 +34,7 @@ namespace Unit5._5._3
             {
                 Echo(modif, deep - 1);
             }
+            
         }
     }
 }
